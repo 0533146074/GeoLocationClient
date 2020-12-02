@@ -1,0 +1,47 @@
+<div class="center col-md-3">
+    <div class="container">
+        <form [formGroup]="searchForm" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-lable" for="origin">מוצא</label>
+                <div>
+                    <input class="form-control" maxlength="35" formControlName="origin" id="origin" [(ngModel)]="origin"
+                        [ngClass]="{'form-control-error': submitted && searchForm.get('origin').invalid}" />
+                    <span
+                        *ngIf="(submitted && searchForm.get('origin').invalid) || (searchForm.get('origin').invalid && searchForm.get('origin').touched)"
+                        class="span-error">
+                        <span *ngIf="searchForm.get('origin').errors.required">
+                            חובה להכניס מוצא
+                        </span>
+                        <span *ngIf="searchForm.get('origin').errors.minlength">
+                            שם מוצא קצר מדי
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-lable" for="destination">יעד</label>
+                <div>
+                    <input class="form-control" maxlength="35" formControlName="destination" id="destination"
+                        [(ngModel)]="destination"
+                        [ngClass]="{'form-control-error': submitted && searchForm.get('destination').invalid}" />
+                    <span
+                        *ngIf="(submitted && searchForm.get('destination').invalid) || (searchForm.get('destination').invalid && searchForm.get('destination').touched)"
+                        class="span-error">
+                        <span *ngIf="searchForm.get('destination').errors.required">
+                            חובה להכניס יעד
+                        </span>
+                        <span *ngIf="searchForm.get('destination').errors.minlength">
+                            שם יעד קצר מדי
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <button class="btn btn-default" [disabled]="disabled" (click)="getDistance()">הצג את המרחק</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

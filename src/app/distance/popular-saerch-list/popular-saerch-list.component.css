@@ -1,0 +1,103 @@
+@import url(//db.onlinewebfonts.com/c/8e7155ee892425b4a94dda0562f72102?family=Open+Sans+Hebrew+Extra+Bold);
+.modal-content {
+    color: white;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-dialog {
+    height: 90%;
+    max-width: 98%;
+}
+
+.modal-backdrop.fade {
+    opacity: 0.75;
+}
+
+.btn-outline-primary {
+    color: white;
+    background-color: #FFC000;
+    border: none;
+    border-radius: 5px;
+    width: 8%;
+}
+
+.btn-outline-primary:focus {
+    color: white;
+    background-color: #FFC000;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #FFC000;
+    border: none;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0), 0 12px 18px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0), 0 12px 18px 1px rgba(0, 0, 0, 0.2);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.numbers {
+    position: relative;
+    margin-top: 5%;
+    font-family: 'Open Sans Hebrew Extra Bold';
+    color: #FFC000;
+    font-size: 200%;
+}
+
+.container1 {
+    font-size: 140%;
+    font-weight: 200;
+}
+
+.container2 {
+    color: #FFC000;
+    font-size: 70%;
+    font-weight: 200;
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.container3 {
+    position: absolute;
+    margin-top: 30%;
+}
+
+.container4 {
+    position: relative;
+    margin-top: 2%;
+}
+
+.container5 {
+    font-size: 75%;
+    font-weight: 200;
+}
+
+.container6 {
+    color: #FFC000;
+    font-size: 50%;
+    font-weight: 200;
+}
+
+.vertical {
+    border-left: 1px solid white;
+}
+
+.popular-list {
+    margin-top: 2%;
+    border-color: #353535;
+    border-radius: 5px;
+    background-color: #353535;
+    padding: 2%;
+}

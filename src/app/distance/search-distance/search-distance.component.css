@@ -1,0 +1,19 @@
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.span-error {
+    color: #eea13d;
+    font-size: 75%;
+    margin: 1%;
+}
+
+.form-control-error {
+    border-color: #eea13d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
