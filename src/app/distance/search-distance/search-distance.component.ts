@@ -29,6 +29,7 @@ export class SearchDistanceComponent implements OnInit {
   getDistance() {
     this.disabled = true;
     if (this.searchForm.invalid) {
+      this.disabled = false;
       this.submitted = true;
       return;
     }
