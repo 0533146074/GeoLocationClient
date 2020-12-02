@@ -49,6 +49,7 @@ export class SearchDistanceComponent implements OnInit {
           this.searchForm.reset();
           alert('הנתונים שהכנסת אינם תקינים!!!');
           this.disabled = false;
+          this.submitted = false;
         }
       });
     }
